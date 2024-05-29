@@ -42,13 +42,7 @@ function updateUser(id, newUser) {
 
 function removeUser(id) {
     return new Promise((resolve, reject) => {
-        let userIndex = -1;
-        users.find((user, i) => {
-            if(user.id === id) {
-                userIndex = i;
-                return true;
-            }
-        });               
+        let userIndex = users.findIndex(user => user.id === id);               
         if (userIndex > -1) {   
             users.splice(userIndex, 1)
             resolve();
