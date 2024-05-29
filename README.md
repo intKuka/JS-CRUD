@@ -1,4 +1,4 @@
-# JS-CRUD
+# REST API via Node.Js
 
 ## Testing
 Postman Collection File: 
