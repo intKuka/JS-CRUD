@@ -1,4 +1,4 @@
-const { listUsers } = require('../../../db/inMemory/data');
+const { listUsers } = require('../../../db/sqlite/sqlite3-data');
 
 const getUsers = async (req, res) => {
     const users = await listUsers();

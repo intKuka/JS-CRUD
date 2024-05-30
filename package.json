@@ -1,0 +1,22 @@
+{
+  "name": "js-crud",
+  "version": "1.0.0",
+  "description": "Download Postman Collection File: \r [Postman Collection - REST API: CRUD](https://github.com/intKuka/JS-CRUD/files/15485729/REST_API_-_CRUD.postman_collection.json)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intKuka/JS-CRUD.git"
+  },
+  "author": "intKuka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/intKuka/JS-CRUD/issues"
+  },
+  "homepage": "https://github.com/intKuka/JS-CRUD#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}

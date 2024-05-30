@@ -1,4 +1,4 @@
-const { findUserById } = require('../../../db/inMemory/data');
+const { findUserById } = require('../../../db/sqlite/sqlite3-data');
 const HttpError = require('../../../helpers/http/HttpError');
 
 const getUserById = async (req, res, id) => {

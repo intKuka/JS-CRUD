@@ -30,11 +30,11 @@ function createUser(user) {
 
 function updateUser(id, newUser) {
     return new Promise((resolve, reject) => {
-        const user = users.find(user => user.id === id);               
-        if (user) {   
-            Object.assign(user, newUser);
+        const userIndex = users.findIndex(user => user.id === id);              
+        if (userIndex > -1) {   
+            users[userIndex] = {...users[userIndex], ...newUser};
             resolve();
-        }        
+        }      
 
         reject(new HttpError(404, "User not found"));
     });
@@ -42,7 +42,7 @@ function updateUser(id, newUser) {
 
 function removeUser(id) {
     return new Promise((resolve, reject) => {
-        let userIndex = users.findIndex(user => user.id === id);               
+        const userIndex = users.findIndex(user => user.id === id);               
         if (userIndex > -1) {   
             users.splice(userIndex, 1)
             resolve();
